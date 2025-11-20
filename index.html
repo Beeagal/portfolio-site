@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bushra · Front-End & CS Student</title>
+  <meta name="description" content="Bushra's responsive portfolio: services, projects, coding activity, academics, and favourites." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#topnav" data-bs-smooth-scroll="true" tabindex="0">
+
+<!-- ================= NAVBAR ================= -->
+<nav id="topnav" class="navbar navbar-expand-lg navbar-dark glass-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">
+      <span class="brand-dot"></span> Bushra
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navlinks" aria-controls="navlinks"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navlinks">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pill-line">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#coding">Coding</a></li>
+        <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+        <li class="nav-item"><a class="nav-link" href="#favorites">Favourites</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="home" class="hero d-flex align-items-center">
+  <div class="hero-orbit hero-orbit--one"></div>
+  <div class="hero-orbit hero-orbit--two"></div>
+  <div class="container text-center text-md-start">
+    <div class="row align-items-center g-4">
+      <div class="col-md-7">
+        <span class="hero-tag badge rounded-pill mb-3">
+          <i class="bi bi-code-slash me-1"></i> CS · Front-End Intern
+        </span>
+        <h1 class="display-5 fw-bold mb-2">Hi, I’m Bushra.</h1>
+        <p class="lead text-muted-hero mb-3">
+          Computer Science student in Budapest, learning front-end by actually building things —
+          flip cards, parallax pages, and responsive layouts.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#portfolio" class="btn btn-primary btn-lg">
+            <i class="bi bi-grid-3x3-gap-fill me-1"></i> See my projects
+          </a>
+          <a href="#coding" class="btn btn-ghost-light btn-lg">
+            <i class="bi bi-terminal me-1"></i> Coding story
+          </a>
+        </div>
+        <div class="hero-meta small text-muted mt-3">
+          <span><i class="bi bi-geo-alt me-1"></i>Budapest, HU</span>
+          <span><i class="bi bi-github me-1"></i>github.com/Beeagal</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-md-end text-center">
+        <div class="hero-card shadow-lg">
+          <p class="small text-uppercase text-muted mb-1">Currently</p>
+          <h5 class="fw-bold mb-2">Lime Light TechLead · Intern</h5>
+          <ul class="hero-list small text-muted mb-3">
+            <li>3D CSS flip cards</li>
+            <li>Parallax scrolling experiments</li>
+            <li>Responsive personal website (this one)</li>
+          </ul>
+          <div class="hero-badges">
+            <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis">HTML</span>
+            <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis">CSS / SCSS</span>
+            <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis">Bootstrap</span>
+            <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis">JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section bg-light py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-4">
+        <h2 class="fw-bold mb-3">Services</h2>
+        <p class="text-muted">
+          I like taking small ideas and turning them into clean, responsive interfaces
+          that behave nicely on mobile and desktop.
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card tooltip-parent">
+              <div class="card-body">
+                <div class="service-icon mb-2">
+                  <i class="bi bi-window-sidebar"></i>
+                </div>
+                <h5 class="card-title">Landing Pages</h5>
+                <p class="card-text small">Focused layouts for one product or idea, optimized for phones first.</p>
+                <span class="tip" data-tip="Deployed with GitHub Pages">?</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card tooltip-parent">
+              <div class="card-body">
+                <div class="service-icon mb-2">
+                  <i class="bi bi-layers"></i>
+                </div>
+                <h5 class="card-title">UI Components</h5>
+                <p class="card-text small">Flip cards, parallax sections, tooltips, grids, and small reusable patterns.</p>
+                <span class="tip" data-tip="Lightweight CSS + JS only">?</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card tooltip-parent">
+              <div class="card-body">
+                <div class="service-icon mb-2">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                <h5 class="card-title">Documentation</h5>
+                <p class="card-text small">Readable READMEs so people actually know how to run the project.</p>
+                <span class="tip" data-tip="Explaining things like a human">?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="section py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-3 flex-wrap gap-2">
+      <h2 class="fw-bold m-0">Portfolio</h2>
+      <small class="text-muted">Selected front-end practice projects</small>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1: Flip Cards -->
+      <div class="col-md-4">
+        <div class="card h-100 project-card shadow-sm">
+          <div class="ratio ratio-16x9 project-thumb project-thumb--blue">
+            <div class="project-thumb-label">
+              <i class="bi bi-box-arrow-in-down-right me-1"></i>3D Flip Cards
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">CSS 3D Clickable Flip Cards</h5>
+            <p class="card-text small text-muted">
+              Product-style cards that flip on click and keyboard-focus using CSS 3D transforms
+              and vanilla JavaScript.
+            </p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="badge bg-primary-subtle text-primary-emphasis">SCSS</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Vanilla JS</span>
+              <span class="badge bg-success-subtle text-success-emphasis">Accessible</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-sm btn-outline-primary w-50"
+                 href=" https://beeagal.github.io/css-3d-clickable-flip-cards/" target="_blank" rel="noreferrer">
+                Live
+              </a>
+              <a class="btn btn-sm btn-outline-secondary w-50"
+                 href="https://github.com/Beeagal/css-3d-clickable-flip-cards" target="_blank" rel="noreferrer">
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Parallax -->
+      <div class="col-md-4">
+        <div class="card h-100 project-card shadow-sm">
+          <div class="ratio ratio-16x9 project-thumb project-thumb--green">
+            <div class="project-thumb-label">
+              <i class="bi bi-layers-half me-1"></i>Parallax Landing
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">“Parallax Universe” Landing</h5>
+            <p class="card-text small text-muted">
+              A more playful landing page with mouse-driven depth, sticky scene, horizontal gallery,
+              and tilt-on-hover cards.
+            </p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="badge bg-primary-subtle text-primary-emphasis">RWD</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Transforms</span>
+              <span class="badge bg-success-subtle text-success-emphasis">No frameworks</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-sm btn-outline-primary w-50"
+                 href=" https://beeagal.github.io/atelier-luma-aw25/" target="_blank" rel="noreferrer">
+                Live
+              </a>
+              <a class="btn btn-sm btn-outline-secondary w-50"
+                 href="https://github.com/Beeagal/atelier-luma-aw25" target="_blank" rel="noreferrer">
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: This Portfolio -->
+      <div class="col-md-4">
+        <div class="card h-100 project-card shadow-sm">
+          <div class="ratio ratio-16x9 project-thumb project-thumb--orange">
+            <div class="project-thumb-label">
+              <i class="bi bi-person-badge me-1"></i>RWD Portfolio
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Responsive Portfolio Website</h5>
+            <p class="card-text small text-muted">
+              Single-page portfolio built with Bootstrap 5, custom CSS, scrollspy navigation,
+              and micro-interactions.
+            </p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="badge bg-primary-subtle text-primary-emphasis">Bootstrap 5</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Responsive</span>
+              <span class="badge bg-success-subtle text-success-emphasis">Deployed</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-sm btn-outline-primary w-50"
+                 href="https://beeagal.github.io/bushra-portfolio/" target="_blank" rel="noreferrer">
+                Live
+              </a>
+              <a class="btn btn-sm btn-outline-secondary w-50"
+                 href="https://github.com/Beeagal/bushra-portfolio" target="_blank" rel="noreferrer">
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CODING ACTIVITY ================= -->
+<section id="coding" class="section bg-soft-dark text-light py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5">
+        <h2 class="fw-bold mb-3">Coding Activity</h2>
+        <p class="text-light-muted">
+          I’m still early in my developer journey, but I care a lot about structure,
+          naming, and not making future-me suffer.
+        </p>
+        <ul class="list-unstyled small text-light-muted">
+          <li>— <strong>Stack:</strong> HTML · CSS / SCSS · JS (vanilla) · Bootstrap</li>
+          <li>— <strong>Deploy:</strong> GitHub Pages</li>
+          <li>— <strong>Practice:</strong> parallax, 3D cards, flex layouts, tooltips</li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-bullet"></div>
+            <div class="t-card shadow-sm">
+              <h6 class="mb-1">Responsive Portfolio Website</h6>
+              <p class="small text-muted mb-2">Bootstrap 5 · mobile-first · scrollspy</p>
+              <p class="small mb-0">
+                Built this portfolio with 5+ sections, navigation that follows scroll,
+                and reusable cards and layout patterns.
+              </p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-bullet"></div>
+            <div class="t-card shadow-sm">
+              <h6 class="mb-1">Parallax Landing (Internship Task)</h6>
+              <p class="small text-muted mb-2">Transforms · scroll-linked effects</p>
+              <p class="small mb-0">
+                Experimented with layers, sticky scenes, and horizontal scrolling
+                without bringing in big animation frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-bullet"></div>
+            <div class="t-card shadow-sm">
+              <h6 class="mb-1">UI Components & Micro-Interactions</h6>
+              <p class="small text-muted mb-2">Tooltips · flip cards · flexbox grids</p>
+              <p class="small mb-0">
+                Practising small components that feel good to use: hover states,
+                simple tooltips, and layouts that don’t break on small screens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACADEMICS ================= -->
+<section id="academics" class="section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <h2 class="fw-bold mb-3">Academics</h2>
+        <p class="text-muted">
+          Computer Science student in Budapest, slowly building a base in programming,
+          algorithms, and web development — while doing internship tasks on the side.
+        </p>
+        <ul class="list-unstyled small">
+          <li>— Focus: web development, algorithms & data structures, software technology labs</li>
+          <li>— Learning: responsive design, component thinking, Git & GitHub</li>
+          <li>— Goal: feel comfortable building small real-world interfaces end-to-end</li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="stat card shadow-sm text-center p-3">
+              <div class="stat-value">3+</div>
+              <div class="small text-muted">years in CS</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="stat card shadow-sm text-center p-3">
+              <div class="stat-value">4+</div>
+              <div class="small text-muted">web-related courses</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="stat card shadow-sm text-center p-3">
+              <div class="stat-value">2</div>
+              <div class="small text-muted">bigger front-end projects</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="stat card shadow-sm text-center p-3">
+              <div class="stat-value">∞</div>
+              <div class="small text-muted">tabs open while coding</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAVOURITES ================= -->
+<section id="favorites" class="section bg-light py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Favourites</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="mb-2"><i class="bi bi-heart me-1 text-primary"></i>Activities</h5>
+            <ul class="small text-muted mb-0">
+              <li>Re-designing layouts until they finally “click”</li>
+              <li>Cooking and tweaking recipes</li>
+              <li>Long walks and overthinking everything</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="mb-2"><i class="bi bi-egg-fried me-1 text-success"></i>Food</h5>
+            <ul class="small text-muted mb-0">
+              <li>Comfort food and freshly baked bread</li>
+              <li>Cheesecake experiments</li>
+              <li>Anything with tahini & lemon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="mb-2"><i class="bi bi-controller me-1 text-warning"></i>Sports & Games</h5>
+            <ul class="small text-muted mb-0">
+              <li>Casual badminton</li>
+              <li>Hiking when the weather behaves</li>
+              <li>Indie games with good stories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Contact</h2>
+        <p class="text-muted">
+          Open to internships, small front-end tasks, or any chance to practise on real projects.
+        </p>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-envelope me-1"></i><strong>Email:</strong> bushra@example.com</li>
+          <li><i class="bi bi-geo-alt me-1"></i><strong>Location:</strong> Budapest, HU</li>
+          <li><i class="bi bi-github me-1"></i><strong>GitHub:</strong> <a href="https://github.com/Beeagal" target="_blank" rel="noreferrer">Beeagal</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <form class="card shadow-sm p-3" onsubmit="event.preventDefault(); alert('Thanks! This demo form doesn’t send emails, but imagine it did.');">
+          <div class="row g-2">
+            <div class="col-sm-6">
+              <label class="form-label small">Name</label>
+              <input type="text" class="form-control" required />
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label small">Email</label>
+              <input type="email" class="form-control" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label small">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-primary">Send</button>
+          </div>
+          <small class="text-muted d-block mt-2">
+            Demo form only — for real use, plug in your own backend or email service.
+          </small>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white-50 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <div>© <span id="year"></span> Bushra — All rights reserved.</div>
+    <div class="small">Built with Bootstrap 5 · Deployed on GitHub Pages</div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
